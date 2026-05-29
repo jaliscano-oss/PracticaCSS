@@ -1,0 +1,203 @@
+/* =========================================
+   CONFIGURACIÓN GLOBAL
+========================================= */
+
+/* 
+   Aplica box-sizing a todos los elementos
+   para que el padding y border no aumenten
+   el tamaño total del elemento
+*/
+*{
+    box-sizing: border-box;
+}
+
+/* 
+   Estilos generales del body:
+   - elimina márgenes
+   - define tipografía principal
+   - color de fondo
+   - color del texto
+   - altura de línea para mejor lectura
+*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+/* 
+   Estilo principal para títulos h1
+*/
+h1 {
+    margin: 0;
+    font-size: 34px;
+    text-align: center;
+}
+
+/* 
+   Estilo para títulos h2:
+   - color verde
+   - línea decorativa inferior
+*/
+h2 {
+    color: #1b7505;
+    margin-top: 0;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+}
+
+/* 
+   Estilo para títulos h3
+*/
+h3 {
+    color: #0d1910;
+}
+
+/* =========================================
+   PÁRRAFOS
+========================================= */
+
+/* 
+   Configuración de párrafos:
+   - tamaño de fuente
+   - texto justificado
+*/
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* =========================================
+   ENLACES
+========================================= */
+
+/* 
+   Estilo base de los enlaces
+*/
+a {
+    margin: 0;
+    color: #1b7505;
+    text-decoration: none;
+}
+
+/* 
+   Efecto hover en enlaces:
+   muestra subrayado al pasar el mouse
+*/
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+/* 
+   Encabezado principal:
+   - fondo oscuro
+   - texto claro
+   - centrado
+*/
+header {
+    background-color: #0d1910;
+    color: #f4f4f4;
+    padding: 28px 16px;
+    text-align: center;
+}
+
+/* 
+   Configuración específica
+   para párrafos dentro del header
+*/
+header p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+/* 
+   Pie de página:
+   - fondo oscuro
+   - texto claro
+   - espaciado superior
+*/
+footer {
+    background-color: #0d1910;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* 
+   Párrafos del footer
+*/
+footer p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* 
+   Elimina cursiva por defecto
+   de la etiqueta address
+*/
+footer address {
+    font-style: normal;
+}
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+/* 
+   Barra de navegación:
+   - fondo amarillo
+   - elementos centrados
+   - usa flexbox
+*/
+nav {
+    background-color: #dba112;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* 
+   Botones/enlaces del menú
+*/
+nav a {
+    background-color: white;
+    color: #0d1910;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #a8a8a7;
+}
+
+/* 
+   Efecto hover del menú:
+   cambia fondo y color de texto
+*/
+nav a:hover {
+    text-decoration: double;
+    color: white;
+    background-color: #1b7505;
+}
+
+main {
+    width: 90%;
+    max-width: 1100%;
+    margin: 25px auto;
+}
